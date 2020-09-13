@@ -1,3 +1,4 @@
+-- Dylan O'Neill
 SELECT 
     nzta_belle1_aws_10.TmStamp,
     nzta_belle1_aws_10.AirTemp1_Av AS 'Belle temp 10min avg',
