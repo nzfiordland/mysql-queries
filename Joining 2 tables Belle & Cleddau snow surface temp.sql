@@ -1,9 +1,11 @@
 SELECT 
-    nzta_belle1_aws_10.TmStamp,
-    nzta_belle1_aws_10.IR_SnowSurfTemp AS 'Belle snow surface temp',
-    nzta_cleddau1_aws_10.IR_SnowSurfTemp AS 'Cleddau snow surface temp'
+    b.TmStamp,
+    b.IR_SnowSurfTemp AS 'Belle snow surface temp',
+    c.IR_SnowSurfTemp AS 'Cleddau snow surface temp'
 FROM
-    nzta_belle1_aws_10,
-    nzta_cleddau1_aws_10
+    nzta_belle1_aws_10 b
+INNER JOIN nzta_cleddau1_aws_10 c
+	ON b.TmStamp = c.TmStamp
+
 WHERE 
-    nzta_belle1_aws_10.TmStamp >= '2021-03-02 00:00:00'
+    b.TmStamp >= '2021-03-02 00:00:00'
