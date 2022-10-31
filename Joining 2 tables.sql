@@ -7,5 +7,5 @@ FROM
     nzta_belle1_aws_10,
     nzta_cleddau1_aws_10
 WHERE
-    nzta_belle1_aws_10.TmStamp >= '2019-05-21 00:00:00'
-        AND nzta_belle1_aws_10.TmStamp <= '2019-05-22 00:00:00'
+    nzta_belle1_aws_10.TmStamp >= '2022-10-27 00:00:00'
+        AND nzta_belle1_aws_10.TmStamp <= '2022-10-27 00:00:00'
