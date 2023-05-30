@@ -10,4 +10,4 @@ FROM
 WHERE
     TmStamp LIKE '%07:00:00%'
 ORDER BY TmStamp DESC
-LIMIT 1;
+LIMIT 2;
